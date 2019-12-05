@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "potion",
+  "version": "1",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.notion.so/*", "http://www.notion.so/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "potion.png"
+  }
+}
